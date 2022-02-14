@@ -1,30 +1,24 @@
-/* change these */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
-
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;0,600;1,200&display=swap');
 * {
   box-sizing: border-box;
 }
 
-/* THIS IS ALL meant for editing. You might want to do it differently, 
-name the variables differently, 
-use the fonts in other ways in the font hierarchy etc. */
-
-/* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
-
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
-
+  --button-color: black;
+  --bg-color: #FFEEDB;
+  --link-color: black;
   --white-space: 1rem;
+  --primary-font:'Roboto Serif', sans-serif; 
+  --link-hover-color:rgba(114, 110, 110, 0.975);
+}
+#logo{
+  max-width: 40%;
+}
+.icons{
+  max-width: 12%;
 }
 
 button {
@@ -41,7 +35,7 @@ button:hover {
 }
 
 button:active {
-  background-color: var(--bg-color);
+  background-color: gray;
 }
 
 a:hover {
@@ -78,12 +72,13 @@ footer {
   letter-spacing: -2px;
   padding-right: 0.75em;
   font-weight: bold;
-  color: white;
+  color: black;
+ 
 }
 
 .header-wrapper h2 {
   font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
+  color: black;
   font-weight: bold;
   margin: var(--white-space) 0;
 }
@@ -91,10 +86,12 @@ footer {
 .header-wrapper h3 {
   font-size: 1.2rem;
   font-style: italic;
+  color: black;
 }
 
 .header-wrapper h4 {
   font-size: 0.8rem;
+  color: black;
 }
 
 main {
@@ -128,46 +125,29 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: black;
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: #F44927;
+ 
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: #68D9A8;
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: #FEC83F;
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: #FFEEDB;
 }
 
-.textures li {
-  height: 30vw;
-  width: 40%;
-  margin-right: 5vw;
-}
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
 
-.texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
-
-.texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
-}
 
 .images ul {
   flex-direction: column;
@@ -182,22 +162,18 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
-  background: var(--link-color);
+  border-radius: 16px;
+  background: var(--button-color);
   text-align: center;
   text-decoration: none;
   font: bold 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
+  text-shadow: 0px -1px 0px #bbecff;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 0 0; /* 22S - 0 margin-bottom mobile */
-}
-
-.secondary-button {
-  background: var(--color-5);
 }
 
 button:focus,
@@ -207,23 +183,20 @@ button:focus-within {
   border-radius: 4px;
 }
 
-.typography-main {
-  color: var(--main-text-color);
-}
 
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  font-family: 'Monoton', cursive;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
   font-size: 1.25rem;
+  font-family: 'Bebas Neue', cursive;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
+  font-family: 'Koh Santepheap', cursive;
   line-height: 1.5;
   max-width: 960px;
 }
@@ -278,9 +251,7 @@ footer {
     /* width: 20%; 22s - already in mobile */
   }
 
-  .textures li {
-    height: 15vw;
-  }
+
 }
 
 @media (min-width: 900px) {
