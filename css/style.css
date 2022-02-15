@@ -136,6 +136,7 @@ ul li:last-child {
 }
 
 .color-swatch-4 {
+<<<<<<< HEAD
   background-color: #fec83f;
 }
 
@@ -143,6 +144,21 @@ ul li:last-child {
   background-color: #ffeedb;
 }
 
+=======
+  background-color: #4FACB4;
+}
+
+.color-swatch-5 {
+  background-color: #FEC83F;
+}
+.color-swatch-6 {
+  background-color: #FFEEDB;
+}
+
+
+
+
+>>>>>>> 8cc8983ec12f30a13f4b76b894062437de2b7459
 .images ul {
   flex-direction: column;
   text-align: center;
