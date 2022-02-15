@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;0,600;1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://use.typekit.net/dab4yap.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;0,600;1,200&display=swap");
 * {
   box-sizing: border-box;
 }
 
 :root {
   --button-color: black;
-  --bg-color: #FFEEDB;
+  --bg-color: #ffeedb;
   --link-color: black;
   --white-space: 1rem;
-  --primary-font:'Roboto Serif', sans-serif; 
-  --link-hover-color:rgba(114, 110, 110, 0.975);
+  --primary-font: "Roboto Serif", sans-serif;
+  --link-hover-color: rgba(114, 110, 110, 0.975);
 }
-#logo{
+#logo {
   max-width: 40%;
 }
-.icons{
+.icons {
   max-width: 12%;
 }
 
@@ -73,7 +73,6 @@ footer {
   padding-right: 0.75em;
   font-weight: bold;
   color: black;
- 
 }
 
 .header-wrapper h2 {
@@ -129,25 +128,20 @@ ul li:last-child {
 }
 
 .color-swatch-2 {
-  background-color: #F44927;
- 
+  background-color: #f44927;
 }
 
 .color-swatch-3 {
-  background-color: #68D9A8;
+  background-color: #68d9a8;
 }
 
 .color-swatch-4 {
-  background-color: #FEC83F;
+  background-color: #fec83f;
 }
 
 .color-swatch-5 {
-  background-color: #FFEEDB;
+  background-color: #ffeedb;
 }
-
-
-
-
 
 .images ul {
   flex-direction: column;
@@ -183,20 +177,21 @@ button:focus-within {
   border-radius: 4px;
 }
 
-
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
-  font-family: 'Monoton', cursive;
+  font-family: "Monoton", cursive;
 }
 
 .h2-sample {
   font-size: 1.25rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: itc-american-typewriter, serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 p.typography-sample {
-  font-family: 'Koh Santepheap', cursive;
+  font-family: "Koh Santepheap", cursive;
   line-height: 1.5;
   max-width: 960px;
 }
@@ -250,8 +245,6 @@ footer {
     height: 10vw;
     /* width: 20%; 22s - already in mobile */
   }
-
-
 }
 
 @media (min-width: 900px) {
